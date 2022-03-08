@@ -1,0 +1,56 @@
+# 数据清洗概念
+&emsp;&emsp;清洗“脏数据”,保证数据质量
+
+# “脏数据”在图像中指的是什么
+&emsp;&emsp;在原始大数据中，数据的质量问题主要有：<sup>[[#^9b4d60|[1]]]</sup>
+&emsp;&emsp;&emsp;&emsp;**噪声**是指对真实数据的修改；
+&emsp;&emsp;&emsp;&emsp;**异常值**是指与大 多数数据偏离较大的数据；
+&emsp;&emsp;&emsp;&emsp;**数值缺失**是指无数据的情况，主要包括：信息未被记录和某些属性不适用于所有实例；
+&emsp;&emsp;&emsp;&emsp;**数值重复**的主要来源是异构数据源的 合并。
+
+&emsp;&emsp;在医学影像领域，"脏数据"包括以下几点 ：
+&emsp;&emsp;&emsp;&emsp; 1.对图像的可读性、唯一性进行筛选，去除不完整、不唯一的图像 ；
+&emsp;&emsp;&emsp;&emsp; 2.对质量差的或者 不满足临床诊断要求的图像进行剔除，比如全黑图像或者层间距过大或过小的图像 ；
+&emsp;&emsp;&emsp;&emsp; 3.对患者隐私信息进行提取和检查，确保图像的合规性。
+
+# 目前的一些应用
+&emsp;&emsp;郝烨<sup>[[#^e3bc0c|[2]]]</sup>在处理[[Knowledge base#^042415|DICOM]]格式的肺结节CT影像时使用了数据清洗技术，对敏感信息进行脱敏处理，并筛除了一批间距过大甚至不连续的图像。
+```ad-info
+DICOM本身的数据格式很明显，这一点和我们的图像数据不太一样
+```
+
+&emsp;&emsp;Y. Li<sup>[[#^83a6b7|[3]]]</sup>在处理ASL-MRI(ASL，Arterial spin labeling动脉自旋标记)的成像数据时，利用经验先导和切片提出了自适应离群点清洗算法，提高了图像的信噪比，提高了CBF(cerebral blood flow,区域脑血流)图像的质量。
+
+```ad-info
+&emsp;&emsp;这里的离群值是因为检测物体不可避免的运动和低信噪比产生的，在图中占的体积很少，却对整个图的质量影响很大。
+&emsp;&emsp;&emsp;信噪比这一点也是我们之前压缩达到最佳效果(3.2 ± 2.2%)的入手点<sup>[[#^f52c46|[4]]]</sup>。
+```
+
+&emsp;&emsp;&emsp;K. Chenaoua<sup>[[#^b9f80a|[5]]]</sup>基于数据聚类和峰挑算法提出了一种新的离群值去除方法,用于清洗人体皮肤数据库。该方法的主要目的是通过对原始数据进行二维投影来简化计算复杂度，然后在二维投影中去除离群值，最后将所有清理后的数据合并生成干净的多维数据。最后的数据用于提取模型的所有统计致据，用于在彩色图像中进行人体皮肤检测。得到的模型更能代表实际数据,从而提高了分类性能。
+
+```ad-info
+&emsp;&emsp;这里的离群值产生于“光照(影响颜色)”，“人为处理”，"本身的噪音"等原因，这些原因也是我们的成像中会出现的。
+```
+
+---
+# 读后的一些思考
+&emsp;&emsp;1.数据清洗和数据分析，数据挖掘息息相关
+&emsp;&emsp; &emsp;2.数据清洗比压缩更进一步，不仅可以减少存储空间占用，还能提升图片质量
+
+
+---
+# 参考文献
+[1]王铭军, 潘巧明, 刘真, 陈为, “可视数据清洗综述,” 中国图象图形学报, vol. 20, no. 4, pp. 468–482, 2015. ^9b4d60
+
+[2]郝烨, 唐桥红, 李佳戈, 王浩, 孟祥峰, 任海萍, “数据清洗技术在DICOM格式医学图像质控中的应用,” 中国医疗设备, vol. 33, no. 12, pp. 10–13, 2018. ^e3bc0c
+
+[3]Y. Li, S. Dolui, D.-F. Xie, and Z. Wang, “Priors-guided slice-wise adaptive outlier cleaning for arterial spin labeling perfusion MRI,” _Journal of Neuroscience Methods_, vol. 307, pp. 248–253, Sep. 2018, doi: [10.1016/j.jneumeth.2018.06.007](https://doi.org/10.1016/j.jneumeth.2018.06.007). ^83a6b7
+
+[4]Qiuyuan Zhong _et al._, “High-definition imaging using line-illumination modulation microscopy,” _Nat Methods_, vol. 18, no. 3, pp. 309–315, Mar. 2021, doi: [10.1038/s41592-021-01074-x](https://doi.org/10.1038/s41592-021-01074-x). ^f52c46
+
+[5]K. Chenaoua, F. Kurugollu, and A. Bouridane, “Data cleaning and outlier removal: Application in human skin detection,” in _2014 5th European Workshop on Visual Information Processing (EUVIP)_, Villetaneuse, Paris, France, Dec. 2014, pp. 1–6. doi: [10.1109/EUVIP.2014.7018408](https://doi.org/10.1109/EUVIP.2014.7018408). ^b9f80a
+
+---
+# 会后需要解决的问题
+1.对比各种图像，如病理切片等，找出我们的成像和其他成像的异同
+2.明确数据清洗能在我们工作流中的具体位置，下游是什么
