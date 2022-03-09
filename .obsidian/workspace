@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "b00f3b84c5ac195f",
+    "type": "split",
+    "children": [
+      {
+        "id": "84a8f7714ab434d2",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "63688d975c784213",
+    "type": "split",
+    "children": [
+      {
+        "id": "1554b7560a6477d2",
+        "type": "tabs",
+        "dimension": 33.032128514056225,
+        "children": [
+          {
+            "id": "5d972b2a98126837",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "52c846bc8a0d66a1",
+        "type": "tabs",
+        "dimension": 37.55020080321285,
+        "children": [
+          {
+            "id": "e7835ad6129c7ceb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "420db883dc1bf1a3",
+        "type": "tabs",
+        "dimension": 29.417670682730922,
+        "children": [
+          {
+            "id": "802ffaee48b8c262",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 248
+  },
+  "right": {
+    "id": "0a51b0cf6fcc33fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e4f6ec0e161d4be",
+        "type": "tabs",
+        "dimension": 32.1285140562249,
+        "children": [
+          {
+            "id": "64332799abb58f37",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "2ba5aed4b3aebb32",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "987c89939a9eb2d9",
+        "type": "tabs",
+        "dimension": 43.07228915662651,
+        "children": [
+          {
+            "id": "38d6eb2aed9feb22",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "3aaf32052e0b2371",
+        "type": "tabs",
+        "dimension": 24.799196787148595,
+        "children": [
+          {
+            "id": "57998f668a67f3ee",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 369
+  },
+  "active": "84a8f7714ab434d2",
+  "lastOpenFiles": [
+    "OB-Note/liangrui/Mindmap of DC.md",
+    "Data-cleansing/21-VISoR-clean&LZW.md",
+    "OB-Note/liangrui/(22.02.23)21-VISoR-clean&LZW.md",
+    "OB-Note/gongpc/readme.md",
+    "OB-Note/liangrui/readme.md",
+    "OB-Note/liangrui/Knowledge card.md",
+    "OB-Note/liangrui/(22.03.02)Literature review.md",
+    "OB-Note/README.md",
+    "未命名.md",
+    "Data-cleansing/Literature review.md"
+  ]
+}

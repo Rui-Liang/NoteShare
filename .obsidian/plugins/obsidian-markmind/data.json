@@ -1,0 +1,23 @@
+{
+  "canvasSize": 8000,
+  "headLevel": 2,
+  "fontSize": 12,
+  "background": "transparent",
+  "layout": "mindmap",
+  "layoutDirect": "right",
+  "protocol": "jump-to-pdf",
+  "registerPdfEvent": true,
+  "viewerTheme": 1,
+  "mindmapmode": "rich",
+  "parseMindMap": true,
+  "highlightFormat": "\nPage:{{page}}\nText:{{highlightText}} \nComment:{{comment}}\n^{{id}}\n",
+  "setup": 1644655541659,
+  "uid": "00p01000s00s01000t00t01300t01300s010012",
+  "pdfjsPath": "F:\\LR\\Zotero\\Obsidian\\assay\\.obsidian\\plugins\\pdfjs",
+  "openProtocol": 1,
+  "useMarkdownSaveAnnotation": "md",
+  "imageFolder": "F:\\LR\\Zotero\\Obsidian\\Assay-Note\\pic",
+  "useAnimate": true,
+  "removeSpace": true,
+  "openCodeBlock": true
+}

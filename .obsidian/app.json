@@ -1,0 +1,14 @@
+{
+  "promptDelete": false,
+  "legacyEditor": false,
+  "livePreview": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "attachmentFolderPath": "pic",
+  "newFileLocation": "folder",
+  "fileSortOrder": "alphabetical"
+}

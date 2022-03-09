@@ -1,0 +1,9 @@
+{
+  "citationExportFormat": "biblatex",
+  "literatureNoteTitleTemplate": "@{{citekey}}",
+  "literatureNoteFolder": "Reading notes",
+  "literatureNoteContentTemplate": "# {{year}} {{title}}\n---\n # Links\n{{note}}\n\n* **[Zotero]({{zoteroSelectURI}})\n* **OB-read-link:(change \"\\\" to \"/\" )：**\n  annotate-target: file://{{entry.data.fields.file}}\n---\n# Metadata\n* **Tags:** {{#each entry.data.fields.keywords}}{{#if @last}}#{{this}}{{else}}#{{this}}, {{/if}}{{/each}}\n* **containerTitle:** [[{{year}}]] [[{{containerTitle}}]]\n* **author：**[[{{authorString}}]]\n---\n# OB_NOTE\n\n## 使用数据\n\n## 具体方法\n\n## 效果\n",
+  "markdownCitationTemplate": "[@{{citekey}}]",
+  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
+  "citationExportPath": "F:\\LR\\Zotero\\Obsidian\\assay\\导出的条目.bib"
+}
