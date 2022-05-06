@@ -43,3 +43,42 @@ collapse: closed
 
 ```
 
+# H.26x那些事
+```ad-note
+title: # **变换系数(Transform Coefficients)**
+collapse: closed
+
+&emsp;&emsp;变换系数是图像像素信息在变换域中的具体体现。变换系数的大小直接反映图像亮度和能量的整体分布，包含图像纹理和边缘的细节。
+
+&emsp;&emsp;HEVC是基于块进行编码的，其中又可以分为编码单元 (CU)、预测单元(PU)和变换单元(Tu)，其中TU的有关处理涉及大量信息，在视频编码过程中占有重要的作用。在经过一系列的预测、变换(使用具有固定变换矩阵的离散余弦变换（DCT）和离散正弦变换（DST）来计算预测误差残差的变换系数)和量化等处理之后，TU中的变换系数具有非常显著的特点，即数据向左上角高度集中，也就是每个变换单元中只在左上角有少量的非零系数，其他位置的系数大部分都为零,==这种方法可能会导致图像细节的丢失和视觉对比度不足==。
+```
+
+^e14a58
+
+```ad-note
+title: # **量化参数(quantization parameter)**
+collapse: closed
+&emsp;&emsp;H.26x的关键技术是码率控制，即在传输带宽受限的情况下，使 H.26x获得较好的重建视频质量。码率控制主要包括设定量化参数(Quantization Parameter，QP)和比特数分配两部分。较小的 QP 值会导致较高的重建视频质量和较低的压缩率，反之亦然。
+```
+
+^18ce74
+
+```ad-note
+title: # **帧内预测(intra prediction mode)**
+collapse: closed
+
+&emsp;&emsp;帧内预测是H.26x编码中用来提升帧内编码压缩效率的编码工具,它通过计算和比较多种帧内预测模式下的宏块率失真代价,并选择最优的帧内预测模式来充分消除图像信号的空间冗余,提升视频信号帧内编码的压缩效率,但多种帧内预测模式下的宏块率失真代价计算使帧内编码运算量成倍增长,阻碍了其实际应用。
+```
+
+^fb3cce
+```ad-note
+title: # **BDBR & BDPSNR**
+collapse: closed
+&emsp;&emsp;在视频的处理过程中， 常常利用 BD-BitRate(BDBR) 与 BD-PSNR(BDPSNR) 来衡量方法的好坏。它提供的是利用新方法得到的视频相对于原来的方法在码率和PSNR上的变化情况。一般来说，码率降低，PSNR增大，能够说明新方法具有较好的性能。然而，会出现这样一种情况， 即码率相对于原来的方法有所降低，但是PSNR即视频的质量却降低了，在这种情况下想要衡量方法的好坏，就需要利用BDBR和DBPSNR.
+	
+&emsp;&emsp;Bjøntegaard delta bit rate (BDBR) 表示了在同样的客观质量下，两种方法的码率节省情况(Rate/distortion curves 画一条水平线)
+
+&emsp;Bjøntegaard delta peak signal-to-noise rate (BD-PSNR)表示了在给定的同等码率下，两种方法的PSNR-Y的差异(Rate/distortion curves 画一条垂直线)。
+```
+
+^ac2721
