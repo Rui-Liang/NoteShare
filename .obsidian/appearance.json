@@ -1,6 +1,22 @@
 {
-  "baseFontSize": -10,
+  "baseFontSize": 19,
   "theme": "moonstone",
   "cssTheme": "Blue Topaz",
-  "translucency": false
+  "translucency": false,
+  "enabledCssSnippets": [
+    "custom-admonitions.c9c6cb",
+    "【自定义】彩色时钟样式",
+    "【自定义】mytools 样式",
+    "【日记】timeline",
+    "【自定义】表格样式TableStyles",
+    "color scheme_dark to light (All blue)",
+    "speech bubbles-1",
+    "speech bubbles-2",
+    "vertical lines of list-1",
+    "vertical lines of list-2",
+    "obsidian"
+  ],
+  "textFontFamily": "Times New Roman",
+  "monospaceFontFamily": "Times New Roman",
+  "interfaceFontFamily": "Times New Roman"
 }

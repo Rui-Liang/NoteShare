@@ -1,8 +1,21 @@
 [
-  "obsidian-citation-plugin",
-  "calendar",
-  "obsidian-plugin-toc",
+  "obsidian-style-settings",
+  "csv-obsidian",
+  "enhanced-editing",
+  "templater-obsidian",
+  "workspaces-plus",
+  "quickadd",
+  "obsidian-memos",
+  "buttons",
+  "recent-files-obsidian",
+  "obsidian-quiet-outline",
   "obsidian-admonition",
+  "obsidian-banners",
+  "markdown-prettifier",
+  "mrj-text-expand",
+  "metaedit",
+  "obsidian-citation-plugin",
   "obsidian-markmind",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-react-components"
 ]

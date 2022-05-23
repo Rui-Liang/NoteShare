@@ -1541,3 +1541,12 @@ td,th {
 .theme-dark .mm-scale>span svg{
    fill:#f5f5f5;
 }
+
+
+/* hover edit */
+
+.mm-node .popover.hover-popover{
+   position: inherit;
+   min-width: 400px;
+   height:300px;
+}

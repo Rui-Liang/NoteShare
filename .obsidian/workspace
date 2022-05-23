@@ -4,25 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "91d6409217595f22",
+        "id": "e1407f9b74d8da05",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Data-cleansing/(22.5.6)16-ROI-HEVC.md",
-            "mode": "preview",
-            "backlinks": true,
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "8d1bfe9d5f8d9dcb",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Data-cleansing/(22.5.6)16-ROI-HEVC.md",
+            "file": "Basic/Writing.md",
             "mode": "preview",
             "backlinks": true,
             "source": false
@@ -39,7 +26,7 @@
       {
         "id": "1554b7560a6477d2",
         "type": "tabs",
-        "dimension": 41.46586345381527,
+        "dimension": 46.06854838709678,
         "children": [
           {
             "id": "5d972b2a98126837",
@@ -54,7 +41,7 @@
       {
         "id": "52c846bc8a0d66a1",
         "type": "tabs",
-        "dimension": 29.116465863453815,
+        "dimension": 33.770161290322584,
         "children": [
           {
             "id": "e7835ad6129c7ceb",
@@ -62,7 +49,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data-cleansing/(22.5.6)16-ROI-HEVC.md"
+                "file": "Basic/Writing.md"
               }
             }
           }
@@ -71,7 +58,7 @@
       {
         "id": "420db883dc1bf1a3",
         "type": "tabs",
-        "dimension": 29.417670682730922,
+        "dimension": 20.161290322580644,
         "children": [
           {
             "id": "802ffaee48b8c262",
@@ -92,31 +79,36 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248
+    "width": 263
   },
   "right": {
     "id": "0a51b0cf6fcc33fe",
     "type": "split",
     "children": [
       {
-        "id": "4e4f6ec0e161d4be",
+        "id": "a85b43e184247421",
         "type": "tabs",
-        "dimension": 32.1285140562249,
+        "dimension": 29.838709677419356,
         "children": [
           {
-            "id": "64332799abb58f37",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "b9f2026497e56701",
+            "id": "5e15525d93a2630f",
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {}
+            }
+          },
+          {
+            "id": "1301b5c3b080c592",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ColorfulClock.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ],
@@ -125,7 +117,7 @@
       {
         "id": "987c89939a9eb2d9",
         "type": "tabs",
-        "dimension": 43.07228915662651,
+        "dimension": 46.37096774193548,
         "children": [
           {
             "id": "38d6eb2aed9feb22",
@@ -140,7 +132,7 @@
       {
         "id": "3aaf32052e0b2371",
         "type": "tabs",
-        "dimension": 24.799196787148595,
+        "dimension": 23.790322580645167,
         "children": [
           {
             "id": "57998f668a67f3ee",
@@ -148,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data-cleansing/(22.5.6)16-ROI-HEVC.md",
+                "file": "Basic/Writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,19 +155,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 333
   },
-  "active": "8d1bfe9d5f8d9dcb",
+  "active": "e1407f9b74d8da05",
   "lastOpenFiles": [
+    "Basic/Writing.md",
+    "Data-cleansing/(22.5.23)20-ROI-SPIHT.md",
     "Data-cleansing/(22.5.6)16-ROI-HEVC.md",
-    "basic/Knowledge card.md",
-    "Pasted image 20220506191736.png(12).md",
+    "Pic/Pasted image 20220523112114.png",
     "Data-cleansing/(22.3.18)21-HD-clean&video.md",
-    "Data-cleansing/(22.2.23)21-VISoR-clean&LZW.md",
-    "pic/1651827928(1).png",
-    "Data-cleansing/(22.3.2)Literature review.md",
-    "Data-cleansing/(22.3.9)Mindmap of DC.md",
-    "pic/1651825140(1).png",
-    "Data-cleansing/研究问题来源--数据清洗.md"
+    "Data-cleansing/Idea——ROI classification.md",
+    "Data-cleansing/图像数据清洗知识总结.md",
+    "test.md",
+    "README.md",
+    "ColorfulClock.md"
   ]
 }
